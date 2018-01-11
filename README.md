@@ -1,4 +1,4 @@
-JobTitle2Vec
+Sentence2Vec
 =======
 
 This repository shows how to use Word2Vec to build a Sentence2Vec model.
@@ -21,7 +21,7 @@ pipenv install
 # to train the model file
 pipenv run python train.py
 
-# to test using the JobTitle2Vec model
+# to test using the Sentence2Vec model
 pipenv run python test.py
 
 # turn job title to vector
@@ -70,10 +70,10 @@ Provide a model file when create the model
 
 Load from a model file
 
-#### get_vector(job_title)
+#### get_vector(sentence)
 
-Get the vector representation of the job title
+Get the vector representation of the sentence
 
 #### similarity(x, y)
 
-Get the similarity score (range from 0 to 1) for 2 job titles x and y
+Get the similarity score (range from 0 to 1) for 2 sentences x and y
