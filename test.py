@@ -2,7 +2,7 @@ from lib.jobtitle2vec import JobTitle2Vec
 
 model = JobTitle2Vec('./data/jobtitle2vec.model')
 
-# turn position to vector
+# turn job title to vector
 print(model.get_vector('Uber Driver Partner'))
 
 # not similar job
