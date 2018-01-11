@@ -6,19 +6,19 @@ from gensim.models import Word2Vec
 from nltk import word_tokenize
 
 
-class JobTitle2Vec:
+class Sentence2Vec:
     def __init__(self, model_file):
         self.load(model_file)
 
     def load(self, model_file):
         self.model = Word2Vec.load(model_file)
 
-    def get_vector(self, job_title):
+    def get_vector(self, sentence):
         # convert to lowercase, ignore all special characters - keep only
         # alpha-numericals and spaces
-        job_title = re.sub(r'[^A-Za-z0-9\s]', r'', str(job_title).lower())
+        sentence = re.sub(r'[^A-Za-z0-9\s]', r'', str(sentence).lower())
 
-        vectors = [self.model.wv[w] for w in word_tokenize(job_title)
+        vectors = [self.model.wv[w] for w in word_tokenize(sentence)
                    if w in self.model.wv]
 
         sum_vector = [sum(x) for x in zip(*vectors)]

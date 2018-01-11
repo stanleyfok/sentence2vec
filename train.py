@@ -42,4 +42,4 @@ model = Word2Vec(tok_titles, sg=1, size=100, window=5, min_count=5, workers=4,
                  iter=100)
 
 # save model to file
-model.save('./data/jobtitle2vec.model')
+model.save('./data/job_titles.model')

@@ -1,6 +1,6 @@
-from lib.jobtitle2vec import JobTitle2Vec
+from lib.sentence2vec import Sentence2Vec
 
-model = JobTitle2Vec('./data/jobtitle2vec.model')
+model = Sentence2Vec('./data/job_titles.model')
 
 # turn job title to vector
 print(model.get_vector('Uber Driver Partner'))
