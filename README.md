@@ -41,17 +41,17 @@ pipenv run python test.py
 
 # not similar job
 # print(model.similarity('Uber Driver Partner',
-                       'Carpenter/ Modular  building installer'))
+#                        'Carpenter/ Modular  building installer'))
 # 0.252182726939546
 
 # a bit similar job
 # print(model.similarity('Temporary Barista 30 hours per week',
-                       'Waitress / Waiter Part-Timer'))
+#                        'Waitress / Waiter Part-Timer'))
 # 0.3569998251067342
 
 # similar job
 # print(model.similarity('Sandwich maker / All rounder',
-                       'Cafe all rounder and Sandwich Hand'))
+#                        'Cafe all rounder and Sandwich Hand'))
 # 0.8558831986704775
 ```
 
