@@ -8,7 +8,7 @@ This repository shows how to use Word2Vec to build a Sentence2Vec model.
 Word2Vec can help to find other words with similar semantic meaning. However, Word2Vec can only take 1 word each time, while a sentence consists of multiple words. To solve this, I write the Sentence2Vec, which is actually a wrapper to Word2Vec. To obtain the vector of a sentence, I simply get the averaged vector sum of each word in the sentence. The similarity score of two sentences can be calculated by the cosine similarity of their result vectors.
 
 ![Sentence2Vec](https://cdn-images-1.medium.com/max/1600/1*w0ArFOVkn2hPhG-bW89MIg.png)
-`source: https://medium.com/@premrajnarkhede/sentence2vec-evaluation-of-popular-theories-part-i-simple-average-of-word-vectors-3399f1183afe`
+source: `https://medium.com/@premrajnarkhede/sentence2vec-evaluation-of-popular-theories-part-i-simple-average-of-word-vectors-3399f1183afe`
 
 Here, I have used job titles as sentences for example data.
 
