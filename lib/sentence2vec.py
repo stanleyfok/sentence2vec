@@ -21,9 +21,12 @@ class Sentence2Vec:
         vectors = [self.model.wv[w] for w in word_tokenize(sentence)
                    if w in self.model.wv]
 
-        sum_vector = [sum(x) for x in zip(*vectors)]
+        v = np.array([sum(x) for x in zip(*vectors)])
 
-        return np.array(sum_vector)
+        if v.size > 0:
+            v = v / v.size
+
+        return v
 
     def similarity(self, x, y):
         xv = self.get_vector(x)
