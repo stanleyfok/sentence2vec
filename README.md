@@ -1,7 +1,11 @@
 JobTitle2Vec
 =======
 
-This repository shows how to use Word2Vec to build a JobTitle2Vec model. Test
+This repository shows how to use Word2Vec to build a JobTitle2Vec model.
+
+## How it works
+
+Word2Vec can help to find other words with similar semantic meaning. However, Word2Vec can only take 1 word each time, while a job title consists of multiple words. To solve this, I write the JobTitle2Vec, which is actually a wrapper to Word2Vec. To obtain the vector of a job title, I simply sum the vectors of each word in the job title. The similarity score of two job titles can be calculated by the cosine similarity of their summed vectors.
 
 ## Getting Started
 
