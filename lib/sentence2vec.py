@@ -21,10 +21,10 @@ class Sentence2Vec:
         vectors = [self.model.wv[w] for w in word_tokenize(sentence)
                    if w in self.model.wv]
 
-        v = np.array([sum(x) for x in zip(*vectors)])
+        v = np.zeros(self.model.vector_size)
 
-        if v.size > 0:
-            v = v / v.size
+        if (len(vectors) > 0):
+            v = (np.array([sum(x) for x in zip(*vectors)])) / v.size
 
         return v
 
